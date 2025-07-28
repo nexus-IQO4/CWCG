@@ -1,0 +1,10 @@
+^C:\USERS\HJ249\DOWNLOADS\SHEHZAD\BUILD\CMAKEFILES\F50A7AE4263EF5341EF021BD8435459B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hj249/Downloads/SHEHZAD -BC:/Users/hj249/Downloads/SHEHZAD/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/hj249/Downloads/SHEHZAD/build/Computer_Graphics_Coursework.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
